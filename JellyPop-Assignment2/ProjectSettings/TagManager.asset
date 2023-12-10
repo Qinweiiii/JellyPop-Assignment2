@@ -10,6 +10,18 @@ TagManager:
   - Obstacle
   - Octopus
   - Key
+  - PlayerAttack
+  - Trap
+  - Enemy
+  - Player1
+  - Magma
+  - EnemyAttack
+  - Monster
+  - Ladder
+  - Coin
+  - Health
+  - DieRegion
+  - Keys
   layers:
   - Default
   - TransparentFX
@@ -21,7 +33,7 @@ TagManager:
   - TriggerBox
   - Player
   - Obstacle
-  - 
+  - Background
   - 
   - 
   - 
@@ -44,6 +56,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 253834087
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 879019349
+    locked: 0
+  - name: Land
+    uniqueID: 1852332463
+    locked: 0
+  - name: Ladder
+    uniqueID: 1203193153
     locked: 0
