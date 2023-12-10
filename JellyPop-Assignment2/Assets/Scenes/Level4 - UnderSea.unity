@@ -1313,7 +1313,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa3706b8535c5564a970c6a836e93dab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartE_Text: {fileID: 0}
+  hearts:
+  - {fileID: 1742878109}
+  - {fileID: 1064613223}
+  - {fileID: 94003307}
+  - {fileID: 2110104663}
+  - {fileID: 1480589787}
+  fullHeart: {fileID: -2086922789, guid: 833884aba7efa7346872d0b57c5c4d17, type: 3}
+  emptyHeart: {fileID: -1791365664, guid: 8a9085c11f5bd3e44af6c19ab3b1b474, type: 3}
 --- !u!114 &406505009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1327,6 +1334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LF: {fileID: 375993573}
+  keyCollection_text: {fileID: 650025262}
 --- !u!1 &428100864
 GameObject:
   m_ObjectHideFlags: 0
@@ -3976,7 +3984,7 @@ GameObject:
   - component: {fileID: 1144461889}
   - component: {fileID: 1144461888}
   m_Layer: 5
-  m_Name: Canvas (1)
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4245,6 +4253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LF: {fileID: 375993573}
+  keyCollection_text: {fileID: 0}
 --- !u!4 &1179183683
 Transform:
   m_ObjectHideFlags: 0
@@ -5067,7 +5076,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40bc1e40d88c3fd48aa680759f855151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartM_Text: {fileID: 0}
+  hearts:
+  - {fileID: 2042637546}
+  - {fileID: 659574300}
+  - {fileID: 130107944}
+  - {fileID: 1684605727}
+  - {fileID: 588228658}
+  fullHeart: {fileID: -2086922789, guid: 833884aba7efa7346872d0b57c5c4d17, type: 3}
+  emptyHeart: {fileID: -2113686259, guid: cb910f383e519124d96ca3ddace7871f, type: 3}
 --- !u!114 &1353312573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5081,6 +5097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LF: {fileID: 375993573}
+  keyCollection_text: {fileID: 650025262}
 --- !u!1 &1365126625
 GameObject:
   m_ObjectHideFlags: 0

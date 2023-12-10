@@ -11,8 +11,6 @@ public class L3HealthManager1 : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
-    public GameObject gameOver;
-
     // Update is called once per frame
     void Update()
     {

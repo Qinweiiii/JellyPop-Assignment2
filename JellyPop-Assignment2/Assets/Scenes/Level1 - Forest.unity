@@ -263,7 +263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46189345}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00059542974, y: 0.011173412, z: 0.0000066533994, w: 0.9999374}
+  m_LocalRotation: {x: -0.0005954101, y: 0.011173378, z: 0.000006653159, w: 0.9999374}
   m_LocalPosition: {x: -8.39701, y: -1.8509121, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2559,7 +2559,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00059542974, y: 0.011173412, z: 0.0000066533994, w: 0.9999374}
+  m_LocalRotation: {x: -0.0005954101, y: 0.011173378, z: 0.000006653159, w: 0.9999374}
   m_LocalPosition: {x: -8.39701, y: -1.8509121, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3826,8 +3826,6 @@ GameObject:
   - component: {fileID: 763167133}
   - component: {fileID: 763167132}
   - component: {fileID: 763167134}
-  - component: {fileID: 763167140}
-  - component: {fileID: 763167138}
   - component: {fileID: 763167136}
   - component: {fileID: 763167139}
   m_Layer: 8
@@ -4051,6 +4049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   L1: {fileID: 1482977120}
+  keyCollection_text: {fileID: 778056868}
 --- !u!114 &763167136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4064,22 +4063,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+  hearts:
+  - {fileID: 328460740}
+  - {fileID: 657729764}
+  - {fileID: 61330389}
+  - {fileID: 1844378670}
+  - {fileID: 782456338}
+  fullHeart: {fileID: 525532347, guid: 52ce7b58da9a4b24f862caf785cb6bc7, type: 3}
+  emptyHeart: {fileID: -1902998094, guid: 8c20dccc8e82ba049bf2f447e51b0880, type: 3}
   gameManager: {fileID: 0}
---- !u!114 &763167138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 763167124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 617164bddf7cc454290b86f1ca4cd8bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 3
-  gameManager: {fileID: 763167139}
-  playerHealth: {fileID: 763167136}
 --- !u!114 &763167139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4090,18 +4082,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2dedd80ed54cf049af021619a05f092, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &763167140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 763167124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d6c5d7824a98444684976c0f8ed12e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &778056866
@@ -6185,7 +6165,6 @@ GameObject:
   - component: {fileID: 1374505919}
   - component: {fileID: 1374505921}
   - component: {fileID: 1374505923}
-  - component: {fileID: 1374505926}
   - component: {fileID: 1374505925}
   m_Layer: 8
   m_Name: Player_1
@@ -6273,7 +6252,7 @@ MonoBehaviour:
   jumpForce: 10
   left: 97
   right: 100
-  jump: 32
+  jump: 119
   groundCheckPoint: {fileID: 1717489433}
   groundCheckRadius: 0.2
   whatIsGround:
@@ -6408,6 +6387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   L1: {fileID: 1482977120}
+  keyCollection_text: {fileID: 778056868}
 --- !u!114 &1374505923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6421,6 +6401,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+  hearts:
+  - {fileID: 547445077}
+  - {fileID: 81452333}
+  - {fileID: 1051096217}
+  - {fileID: 846681828}
+  - {fileID: 880937898}
+  fullHeart: {fileID: 525532347, guid: 52ce7b58da9a4b24f862caf785cb6bc7, type: 3}
+  emptyHeart: {fileID: 363723085, guid: 7b7f41150512bc843ba4c4f1f0554658, type: 3}
   gameManager: {fileID: 0}
 --- !u!114 &1374505925
 MonoBehaviour:
@@ -6434,21 +6422,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2dedd80ed54cf049af021619a05f092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1374505926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374505910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 617164bddf7cc454290b86f1ca4cd8bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 3
-  gameManager: {fileID: 1374505925}
-  playerHealth: {fileID: 1374505923}
 --- !u!1 &1378667691
 GameObject:
   m_ObjectHideFlags: 0
@@ -6776,6 +6749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   L1: {fileID: 1482977120}
+  keyCollection_text: {fileID: 0}
 --- !u!4 &1451628140
 Transform:
   m_ObjectHideFlags: 0

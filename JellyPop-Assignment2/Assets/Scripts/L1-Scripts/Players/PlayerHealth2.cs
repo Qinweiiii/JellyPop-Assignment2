@@ -2,18 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerHealth2 : MonoBehaviour
 {
    public int health =5;
-   public GameManager gameManager;
+
+    public Image[] hearts;
+    public Sprite fullHeart;
+    public Sprite emptyHeart;
+
+    public GameManager gameManager;
 
    void Start()
    {
     
    }
 
-   public void TakeDamage(int damage)
+    void Update()
+    {
+        foreach (Image img in hearts)
+        {
+            img.sprite = emptyHeart;
+        }
+        for (int i = 0; i < health; i++)
+        {
+            hearts[i].sprite = fullHeart;
+        }
+    }
+
+    public void TakeDamage(int damage)
    {
         health -= damage;
         if(health <= 0)

@@ -7,7 +7,8 @@ public class KeyCollect : MonoBehaviour
 {
     
     public L1LevelFinish L1;
-    //public int keys = 0;
+    //public static int keys = 0;
+    [SerializeField] public Text keyCollection_text;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,8 +16,8 @@ public class KeyCollect : MonoBehaviour
         {
             L1.keys++;
             Debug.Log("Key:" +L1.keys);
+            keyCollection_text.text = "Key:" + L1.keys++;
             Destroy(collision.gameObject);
-            Debug.Log("Key Destroy");
         }
     }
    
