@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class L3GameManager : MonoBehaviour
 {
     private Animator anim;
-    private bool p1reach;
-    private bool p2reach;
+    private int en;
+    private int mu;
 
     public GameObject pauseScreen;
 
@@ -26,26 +26,28 @@ public class L3GameManager : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (L3ItemCollector.keys == 3)
+        if (other.gameObject.CompareTag("Player1"))
         {
-            if (collision.gameObject.tag == "Player1")
-            {
-                p1reach = true;
-            }
-            if (collision.gameObject.tag == "Player2")
-            {
-                p2reach = true;
-            }
+            en = 1;
+            Debug.Log("Enchantress is arriving.");
+            Debug.Log("KeyNo: " + L3ItemCollector.keys);
+        }
+        else if (other.gameObject.CompareTag("Player2"))
+        {
+            mu = 1;
+            Debug.Log("Musketeer is arriving.");
+            Debug.Log("KeyNo: " + L3ItemCollector.keys);
+        }
+        else if (L3ItemCollector.keys == 3)
+        {
+            Debug.Log("Key is enough.");
+        }
 
-            if (p1reach) 
-            {
-                if (p2reach)
-                {
-                    CompleteLevel();
-                }
-            }
+        if (en == 1 && mu == 1 && L3ItemCollector.keys == 3)
+        {
+            CompleteLevel3();
         }
     }
 
@@ -75,7 +77,7 @@ public class L3GameManager : MonoBehaviour
         L3DragonHealthManager.health = 12;
     }
 
-    private void CompleteLevel()
+    private void CompleteLevel3()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
