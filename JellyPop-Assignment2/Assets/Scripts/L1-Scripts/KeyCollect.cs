@@ -12,11 +12,12 @@ public class KeyCollect : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         if (collision.gameObject.CompareTag("Keys"))
         {
             L1.keys++;
             Debug.Log("Key:" +L1.keys);
-            keyCollection_text.text = "Key:" + L1.keys++;
+            keyCollection_text.text = "Key:" + L1.keys;
             Destroy(collision.gameObject);
         }
     }
