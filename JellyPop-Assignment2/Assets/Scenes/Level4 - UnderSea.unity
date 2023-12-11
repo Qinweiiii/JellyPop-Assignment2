@@ -3047,7 +3047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
-  time: 0
+  time: 0.2
 --- !u!1 &846466424
 GameObject:
   m_ObjectHideFlags: 0
@@ -7129,7 +7129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
-  time: 0
+  time: 0.2
 --- !u!4 &1987925844 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5299475816256920683, guid: cec53f841cd12b14cbd73f01f5be6371, type: 3}
