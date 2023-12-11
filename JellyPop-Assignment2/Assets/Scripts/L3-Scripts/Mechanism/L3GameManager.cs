@@ -65,7 +65,7 @@ public class L3GameManager : MonoBehaviour
 
     public void GoToHome()
     {
-        SceneManager.LoadScene("Home");
+        SceneManager.LoadScene("StartGame");
     }
 
     private void RestartLevel()

@@ -33,6 +33,6 @@ public class L1Terminate : MonoBehaviour
 
     public void GoToHome()
     {
-        SceneManager.LoadScene("Home");
+        SceneManager.LoadScene("StartGame");
     }
 }
