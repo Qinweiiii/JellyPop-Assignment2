@@ -16,7 +16,7 @@ public class KeyCollect : MonoBehaviour
         {
             L1.keys++;
             Debug.Log("Key:" +L1.keys);
-            keyCollection_text.text = "Key:" + L1.keys++;
+            keyCollection_text.text = "Key:" + L1.keys;
             Destroy(collision.gameObject);
         }
     }
