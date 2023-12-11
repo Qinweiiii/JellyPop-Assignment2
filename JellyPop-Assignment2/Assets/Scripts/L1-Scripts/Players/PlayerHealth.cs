@@ -13,7 +13,6 @@ public class PlayerHealth : MonoBehaviour
    public Sprite fullHeart;
    public Sprite emptyHeart;
 
-   public GameManager gameManager;
 
    void Start()
    {
@@ -54,8 +53,8 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         // Notify the GameManager that a player has died
-        gameManager.PlayerDied();
+       
         Destroy(gameObject);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
