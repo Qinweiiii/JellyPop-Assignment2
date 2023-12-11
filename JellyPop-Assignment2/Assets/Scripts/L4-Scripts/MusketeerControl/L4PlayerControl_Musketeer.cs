@@ -37,12 +37,12 @@ public class L4PlayerControl_Musketeer : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            x_speed = -4;
+            x_speed = -10;
             transform.localRotation = Quaternion.Euler(0, 180, -15);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            x_speed = 4;
+            x_speed = 10;
             transform.localRotation = Quaternion.Euler(0, 0, -15);
         }
         else if (!Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
@@ -53,11 +53,11 @@ public class L4PlayerControl_Musketeer : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            y_speed = 4;
+            y_speed = 10;
         }
         else if (Input.GetKey(KeyCode.DownArrow))
         {
-            y_speed = -4;
+            y_speed = -10;
         }
         else if (!Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow))
         {

@@ -52,12 +52,12 @@ public class L4PlayerControl_Enchantress : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            x_speed = -4;
+            x_speed = -10;
             transform.localRotation = Quaternion.Euler(0, 180, -15);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            x_speed = 4;
+            x_speed = 10;
             transform.localRotation = Quaternion.Euler(0, 0, -15);
         }
         else if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
@@ -68,11 +68,11 @@ public class L4PlayerControl_Enchantress : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.W))
         {
-            y_speed = 4;
+            y_speed = 10;
         }
         else if(Input.GetKey(KeyCode.S))
         {
-            y_speed = -4;
+            y_speed = -10;
         }
         else if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
         {
